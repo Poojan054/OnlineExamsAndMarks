@@ -26,13 +26,13 @@ return array(
     */
     'email' => array(
         'enabled' => true,
-        'from' => 'poojanpatel0106@gmail.com',
+        'from' => getenv('smtp_email'),
         'from_name' => 'Student Result Management System',
         'smtp_enabled' => true,
         'smtp_host' => 'smtp.gmail.com',
         'smtp_port' => 587,
         'smtp_encryption' => 'tls',
-        'smtp_username' => 'poojanpatel0106@gmail.com',
+        'smtp_username' => getenv('smtp_email'),
         'smtp_password' => getenv('smtp_pass'),
         'smtp_timeout' => 15
     )
